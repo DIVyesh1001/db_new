@@ -1,0 +1,31 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 60px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-column h4 {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-column p {
+  margin: 8px 0;
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-column p:hover {
+  color: #fff;
+}
+

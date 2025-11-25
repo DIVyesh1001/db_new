@@ -1,0 +1,240 @@
+.dataset-detail {
+  min-height: 100vh;
+  background: #fff;
+  padding: 40px 60px;
+}
+
+.dataset-detail-loading,
+.dataset-detail-error {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.loading-text {
+  font-size: 20px;
+  color: #666;
+}
+
+.error-container {
+  text-align: center;
+}
+
+.error-message {
+  padding: 20px;
+  background: #fee;
+  border: 1px solid #fcc;
+  color: #c33;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.dataset-header {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.dataset-header-content {
+  margin-bottom: 32px;
+}
+
+.dataset-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: #111;
+}
+
+.dataset-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dataset-tabs {
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.dataset-tabs ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dataset-tabs button {
+  background: none;
+  border: none;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.dataset-tabs button:hover {
+  color: #111;
+}
+
+.dataset-tabs button.active {
+  color: #111;
+  font-weight: 700;
+}
+
+.dataset-tabs button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #51087e;
+}
+
+.dataset-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dataset-content {
+  margin-bottom: 40px;
+}
+
+.executive-content {
+  font-size: 18px;
+}
+
+.chart-container {
+  padding: 40px;
+  text-align: center;
+  background: #f7f7f7;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.chart-image {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.chart-label {
+  font-size: 20px;
+  color: #666;
+}
+
+.executive-list {
+  list-style: disc;
+  padding-left: 32px;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 32px 0;
+}
+
+.executive-list li {
+  margin-bottom: 16px;
+}
+
+.methodology-content {
+  font-size: 18px;
+  padding: 40px;
+  background: #e0e0e0;
+  border-radius: 12px;
+  line-height: 1.8;
+}
+
+.definitions-content {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.definitions-content > p {
+  margin-bottom: 32px;
+}
+
+.definitions-charts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.definitions-charts .chart-image {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.data-content {
+  font-size: 18px;
+}
+
+.sheets-table {
+  margin-bottom: 24px;
+}
+
+.sheets-table table {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.sheets-table td {
+  padding: 16px;
+  border: 1px solid #000;
+}
+
+.sheet-button {
+  background: none;
+  border: none;
+  color: #51087e;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.sheet-button:hover {
+  color: #3d0661;
+}
+
+.sheet-button.active {
+  font-weight: 600;
+  color: #3d0661;
+}
+
+.excel-viewer-container {
+  margin-top: 24px;
+}
+
+.dataset-actions {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.back-button {
+  padding: 12px 24px;
+  background: #fff;
+  border: 2px solid #51087e;
+  color: #51087e;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  background: #51087e;
+  color: #fff;
+}
+
