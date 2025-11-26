@@ -22,9 +22,9 @@ const MarketDetail = () => {
 
   const marketTitle = marketName
     ? marketName
-        .split("-")
-        .map(word => word[0].toUpperCase() + word.slice(1))
-        .join(" ")
+      .split("-")
+      .map(word => word[0].toUpperCase() + word.slice(1))
+      .join(" ")
     : "Market";
 
   return (
@@ -96,79 +96,87 @@ const MarketDetail = () => {
       </section>
 
       {/* Tabs */}
-      <div className="max-w-6xl mx-auto mt-8 mb-8 ml-8 mr-8">
-        <ul className="flex gap-12">
-          {TABS.map(t => (
-            <li key={t.key}>
-              <button
-                onClick={() => setTab(t.key)}
-                className={`text-lg ${tab === t.key ? "font-extrabold" : "font-medium"}`}
-              >
-                {t.label}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <section className="section">
+  <div className="tab-header-container">
 
-      {/* Tab Content */}
-      <main className="max-w-6xl mx-auto mb-12 ml-8 mr-8">
+          <ul className="tab-list">
 
-        {tab === "executive" && (
-          <div>
-            <div className="chart-box">
-              <img src={CHART1} alt="Chart 1" className="chart-img" />
-              <div className="chart-label">Chart 1</div>
+            {TABS.map(t => (
+              <li key={t.key}>
+                <button
+                  onClick={() => setTab(t.key)}
+                  className={`tab-btn ${tab === t.key ? "active" : ""}`}
+                >
+                  {t.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Tab Content */}
+        <div className="tab-content-container">
+
+
+          {tab === "executive" && (
+            <div>
+              <div className="chart-box">
+                <img src={CHART1} alt="Chart 1" className="chart-img" />
+                <div className="chart-label">Chart 1</div>
+              </div>
+
+              <ul className="bullet-large">
+
+                <li>Text</li>
+              </ul>
+
+              <div className="chart-box">
+                <img src={CHART2} alt="Chart 2" className="chart-img" />
+                <div className="chart-label">Chart 2</div>
+              </div>
+
+              <ul className="bullet-large mt-8">
+
+                <li>Text</li>
+              </ul>
             </div>
+          )}
 
-            <ul className="list-disc pl-8 text-2xl mb-8">
-              <li>Text</li>
-            </ul>
-
-            <div className="chart-box">
-              <img src={CHART2} alt="Chart 2" className="chart-img" />
-              <div className="chart-label">Chart 2</div>
+          {tab === "method" && (
+            <div className="method-box">
+              <p>
+                Datum Forecast is a comprehensive, data-driven solution that offers invaluable insights into the factors shaping various industries. By providing a quantitative framework for assessing market drivers and inhibitors, it empowers clients to make well-informed investment decisions and develop strategic plans that capitalize on growth opportunities while mitigating potential risks. <br />
+                To forecast upcoming market trends and opportunities, our market sizing and forecasting team makes use of statistical models, time series analysis, and other forecasting approaches. <br />
+                To create precise estimates, we take into account elements like historical data, market drivers, economic indicators, consumer behaviour, and the competitive environment. <br />
+                Our forecasting and trend analysis enable businesses to anticipate market shifts, adapt their strategies, and stay ahead of the competition. <br />
+                Our dedicated team produces over 50 forecasts annually, enabling a comprehensive understanding of global market trends.
+              </p>
             </div>
+          )}
 
-            <ul className="list-disc pl-8 text-2xl mt-8">
-              <li>Text</li>
-            </ul>
-          </div>
-        )}
-
-        {tab === "method" && (
-          <div className="method-box">
-            <p>
-              Datum Forecast uses statistical models, time series analysis and structured
-              forecasting frameworks. Estimates incorporate market drivers, economic
-              indicators, competitive dynamics and behavioural shifts.
-            </p>
-          </div>
-        )}
-
-        {tab === "defs" && (
-          <div className="text-xl space-y-6">
-            <p>
-              Online population: total individuals with internet access who use it regularly
-              (minimum once per month).
-            </p>
-            <img src={CHART1} className="chart-img" />
+          {tab === "defs" && (
+            <div className="text-xl space-y-6">
+              <p>
+                Online population: total individuals with internet access who use it regularly
+                (minimum once per month).
+              </p>
+              {/* <img src={CHART1} className="chart-img" />
             <img src={CHART2} className="chart-img" />
-            <img src={CHART3} className="chart-img" />
-          </div>
-        )}
+            <img src={CHART3} className="chart-img" /> */}
+            </div>
+          )}
 
-        {tab === "data" && (
-          <div className="text-xl">
-            <table className="w-full border border-black border-collapse mb-6">
-              <tbody></tbody>
-            </table>
-            <div className="mt-4"></div>
-          </div>
-        )}
+          {tab === "data" && (
+            <div className="text-xl">
+              <table className="w-full border border-black border-collapse mb-6">
+                <tbody></tbody>
+              </table>
+              <div className="mt-4"></div>
+            </div>
+          )}
 
-      </main>
-
+        </div>
+      </section>
       {/* Categories */}
       <section className="section categories">
         {CATEGORIES.map((cat, i) => (
