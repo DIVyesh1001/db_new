@@ -259,23 +259,58 @@
 }
 
 /* Chart image wrap */
+/* Chart box → side-by-side layout */
 .chart-box {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 40px 0;
 }
 
+/* Left text area */
+.chart-text {
+  flex: 1;
+}
+
+/* Right chart image */
 .chart-img {
+  flex: 1;
   width: 100%;
-  max-width: 900px;
+  max-width: 600px;
   border-radius: 12px;
+  object-fit: contain;
 }
 
+/* Optional label below image */
 .chart-label {
-  margin-top: 12px;
-  color: #666;
+  text-align: right;
   font-size: 14px;
+  margin-top: 8px;
+  color: #666;
 }
+
+/* Mobile fallback */
+@media (max-width: 900px) {
+  .chart-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chart-text {
+    order: 2;
+  }
+
+  .chart-img {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .chart-label {
+    text-align: center;
+  }
+}
+
 
 /* Tables in Data tab */
 table.w-full {

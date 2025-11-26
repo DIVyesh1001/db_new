@@ -97,7 +97,7 @@ const MarketDetail = () => {
 
       {/* Tabs */}
       <section className="section">
-  <div className="tab-header-container">
+        <div className="tab-header-container">
 
           <ul className="tab-list">
 
@@ -121,9 +121,14 @@ const MarketDetail = () => {
           {tab === "executive" && (
             <div>
               <div className="chart-box">
+                <div className="chart-text">
+                  <ul className="bullet-large">
+                    <li>Text</li>
+                  </ul>
+                </div>
                 <img src={CHART1} alt="Chart 1" className="chart-img" />
-                <div className="chart-label">Chart 1</div>
               </div>
+
 
               <ul className="bullet-large">
 
@@ -131,9 +136,14 @@ const MarketDetail = () => {
               </ul>
 
               <div className="chart-box">
-                <img src={CHART2} alt="Chart 2" className="chart-img" />
-                <div className="chart-label">Chart 2</div>
+                <div className="chart-text">
+                  <ul className="bullet-large">
+                    <li>Text</li>
+                  </ul>
+                </div>
+                <img src={CHART1} alt="Chart 1" className="chart-img" />
               </div>
+
 
               <ul className="bullet-large mt-8">
 
