@@ -50,7 +50,7 @@ const Dashboard = () => {
   };
 
   const markets = [
-    'Retail', 'eCommerce', 'Q-Commerce', 'Beauty', 'Fashion',
+    'Population', 'eCommerce', 'Q-Commerce', 'Beauty', 'Fashion',
     'Foodservice', 'Payments', 'Airport Retail', 'Liquor', 'Smartphones'
   ];
 

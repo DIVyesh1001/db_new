@@ -105,7 +105,7 @@ const DatasetDetail = () => {
 
       <main className="dataset-main">
         <section className="dataset-content">
-          {tab === 'executive' && (
+          {/* {tab === 'executive' && (
             <div className="executive-content">
               <div className="chart-container">
                 <img src={CHART1} alt="Chart 1" className="chart-image" />
@@ -211,14 +211,17 @@ const DatasetDetail = () => {
                 <ExcelViewer datasetId={id} sheetName={selectedSheet} />
               </div>
             </div>
-          )}
+          )} */}
+          <div className="excel-viewer-container">
+                <ExcelViewer datasetId={id} sheetName={selectedSheet} />
+              </div>
         </section>
 
-        <div className="dataset-actions">
+        {/* <div className="dataset-actions">
           <button onClick={() => navigate('/dashboard')} className="back-button">
             Back to Dashboard
           </button>
-        </div>
+        </div> */}
       </main>
     </div>
   );

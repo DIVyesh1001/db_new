@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './MarketDetail.css';
+import DatasetDetail from './DatasetDetail';
 
-const CHART1 = "https://i.ibb.co/k6cVJPm1/Blinkit-aata-updated.png";
-const CHART2 = "https://i.ibb.co/xSFFxbm4/Blinkit-Ashirvaad-article-graph.png";
-const CHART3 = "https://i.ibb.co/Cp50HJCt/blinkit-atta-cat.png";
+const CHART1 = "https://www.datumintell.in/content/images/2024/04/Screenshot-2024-04-18-at-10.30.36-AM.png";
+const CHART2 = "https://www.datumintell.in/content/images/2024/04/Screenshot-2024-04-18-at-10.53.47-AM.png";
+const CHART3 = "https://www.datumintell.in/content/images/2024/04/Screenshot-2024-04-18-at-11.12.40-AM.png";
 const TABS = [
   { key: "executive", label: "Executive Summary" },
   { key: "method", label: "Methodology" },
@@ -32,8 +33,8 @@ const MarketDetail = () => {
 
       {/* Title */}
       <section className="title-block">
-        <h1>{marketTitle} & Personal Care in India</h1>
-        <p>Updated: October 2025 • Source: Datum Intelligence</p>
+        <h1>Global Online {marketTitle} Forecast 2023-28</h1>
+        <p>Key Findings of Datum’s Global Online Population Forecast 2023 -28  • Source: Datum Intelligence</p>
       </section>
 
       {/* KPIs */}
@@ -55,10 +56,10 @@ const MarketDetail = () => {
 
       {/* Intro */}
       <section className="section">
+        <h1>Global Online Population to Reach 6.6 Billion by 2028</h1>
         <p className="description">
-          India’s {marketTitle.toLowerCase()} and personal care market continues to expand
-          steadily, driven by premiumisation, broader online adoption, and rising consumption
-          across metros and Tier 2–3 cities.
+          The global online {marketTitle.toLowerCase()} is expected to reach 6.6 billion by 2028, representing a significant increase from the current 5.7 billion internet users worldwide. This growth will be fueled by several factors, including improved internet infrastructure, affordable data plans, and widespread adoption of smartphones in developing countries.
+          As the digital landscape expands, the internet will continue to play a crucial role in shaping various aspects of daily life, including communication, entertainment, education, and commerce. This projection underscores the importance of digital inclusion and highlights the immense potential for businesses and organizations to tap into the rapidly growing online market.
         </p>
       </section>
 
@@ -122,33 +123,34 @@ const MarketDetail = () => {
             <div>
               <div className="chart-box">
                 <div className="chart-text">
-                  <ul className="bullet-large">
-                    <li>Text</li>
-                  </ul>
+                  {/* <ul className="bullet-large">
+                  </ul> */}
+                  <h1>Global Online Population to Reach 6.6 Billion by 2028</h1>
+                  <span>The global online population is expected to reach 6.6 billion by 2028, representing a significant increase from the current 5.7 billion internet users worldwide. This growth will be fueled by several factors, including improved internet infrastructure, affordable data plans, and widespread adoption of smartphones in developing countries.
+                        As the digital landscape expands, the internet will continue to play a crucial role in shaping various aspects of daily life, including communication, entertainment, education, and commerce. This projection underscores the importance of digital inclusion and highlights the immense potential for businesses and organizations to tap into the rapidly growing online market.</span>
                 </div>
                 <img src={CHART1} alt="Chart 1" className="chart-img" />
               </div>
-
-
-              <ul className="bullet-large">
-
-                <li>Text</li>
-              </ul>
 
               <div className="chart-box">
                 <div className="chart-text">
-                  <ul className="bullet-large">
-                    <li>Text</li>
-                  </ul>
+                  {/* <ul className="bullet-large">
+                  </ul> */}
+                  <h1>Asia Pacific Accounts for More Than 50% Online Users</h1>
+                  <span>Asia Pacific, a region with rapid digital adoption and a thriving technology sector, is home to more than half of the world's internet users. With over 2.9 billion people online, the region accounts for more than 50% of the global online population, solidifying its position as a major player in the digital landscape.
+                    This massive online population has driven Asia Pacific to become one of the fastest-growing digital markets. The region is a leader in cashless transactions, thanks to the widespread adoption of digital payment methods such as e-commerce, mobile payments, and social commerce.</span>
                 </div>
-                <img src={CHART1} alt="Chart 1" className="chart-img" />
+                <img src={CHART2} alt="Chart 2" className="chart-img" />
               </div>
-
-
-              <ul className="bullet-large mt-8">
-
-                <li>Text</li>
-              </ul>
+              <div className="chart-box">
+                <div className="chart-text">
+                  {/* <ul className="bullet-large">
+                  </ul> */}
+                  <h1>Asia and MEA Leads Will Account for 85% of New Online Users</h1>
+                  <span>Over the coming years, a staggering 937 million new internet users are projected to join the online world, with Asia and the Middle East and Africa (MEA) accounting for an impressive 85% of this growth. This significant expansion in internet adoption will bring millions of people online for the first time, driving digital innovation and economic development in these regions.</span>
+                </div>
+                <img src={CHART3} alt="Chart 3" className="chart-img" />
+              </div>
             </div>
           )}
 
@@ -159,7 +161,8 @@ const MarketDetail = () => {
                 To forecast upcoming market trends and opportunities, our market sizing and forecasting team makes use of statistical models, time series analysis, and other forecasting approaches. <br />
                 To create precise estimates, we take into account elements like historical data, market drivers, economic indicators, consumer behaviour, and the competitive environment. <br />
                 Our forecasting and trend analysis enable businesses to anticipate market shifts, adapt their strategies, and stay ahead of the competition. <br />
-                Our dedicated team produces over 50 forecasts annually, enabling a comprehensive understanding of global market trends.
+                Our dedicated team produces over 30 forecasts annually, enabling a comprehensive understanding of global market trends. <br />
+                Source: Datum Global Online Population Forecast 2023-28
               </p>
             </div>
           )}
@@ -167,8 +170,7 @@ const MarketDetail = () => {
           {tab === "defs" && (
             <div className="text-xl space-y-6">
               <p>
-                Online population: total individuals with internet access who use it regularly
-                (minimum once per month).
+                Online population. Total number of individuals or users who have access to the internet and regularly use it for various purposes, such as communication, information gathering, entertainment, shopping, and more (at least once in a month)
               </p>
               {/* <img src={CHART1} className="chart-img" />
             <img src={CHART2} className="chart-img" />
@@ -178,9 +180,10 @@ const MarketDetail = () => {
 
           {tab === "data" && (
             <div className="text-xl">
-              <table className="w-full border border-black border-collapse mb-6">
+              {/* <table className="w-full border border-black border-collapse mb-6">
                 <tbody></tbody>
-              </table>
+              </table> */}
+              <DatasetDetail/>
               <div className="mt-4"></div>
             </div>
           )}

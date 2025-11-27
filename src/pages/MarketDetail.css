@@ -25,6 +25,11 @@
   padding: 40px 60px;
 }
 
+.section h1{
+  font-size: 36px;
+  margin: 0 0 8px 0;
+  color: #111;
+}
 .kpi-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -206,6 +211,17 @@
   background: #f7f7f7;
 }
 
+
+.method-box{
+  background-color: #bcbcbc;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.method-box p{
+  font-size:larger;
+}
+
 /* ---------- Tailwind → Pure CSS replacements ---------- */
 
 .tab-header-container {
@@ -221,9 +237,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; */
 }
 
 .tab-btn {
@@ -232,11 +248,15 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding: 10px;
   transition: opacity 0.2s;
 }
 
 .tab-btn.active {
   font-weight: 800;       /* font-extrabold */
+  background-color: rgb(175, 175, 175);
+  border-radius: 20px;
+  
 }
 
 .tab-content-container {
