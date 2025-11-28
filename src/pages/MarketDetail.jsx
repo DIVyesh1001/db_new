@@ -41,10 +41,10 @@ const MarketDetail = () => {
       <section className="section">
         <div className="kpi-grid">
           {[
-            ["₹XX bn", "Total Market Size"],
-            ["+XX%", "YoY Growth"],
-            ["XX%", "Online Penetration"],
-            ["XX%", "5Y CAGR"],
+            ["₹6.1 bn", "Global Toyal Online Population (2025)"],
+            ["75%", "% Total Population"],
+            ["937 mn", "Global New Internet User Addition (2023-2028)"],
+            ["352", "North America Total Online Population 2028"],
           ].map(([value, label], i) => (
             <div className="card" key={i}>
               <h3>{value}</h3>

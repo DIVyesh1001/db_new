@@ -15,8 +15,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/dashboard" className="logo">
-          <strong>DATUM</strong>
+        <Link to="/" className="logo">
+          <img src="https://i.ibb.co/HL621dGV/Colorlogo.png" alt="datumlogo" className="datum-logo" />
         </Link>
         <nav className="nav">
           {user ? (
