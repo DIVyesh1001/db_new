@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './MarketDetail.css';
 import DatasetDetail from './DatasetDetail';
+import PopulationChart from '../components/PopulationChart';
 
 const CHART1 = "https://www.datumintell.in/content/images/2024/04/Screenshot-2024-04-18-at-10.30.36-AM.png";
 const CHART2 = "https://www.datumintell.in/content/images/2024/04/Screenshot-2024-04-18-at-10.53.47-AM.png";
@@ -129,7 +130,8 @@ const MarketDetail = () => {
                   <span>The global online population is expected to reach 6.6 billion by 2028, representing a significant increase from the current 5.7 billion internet users worldwide. This growth will be fueled by several factors, including improved internet infrastructure, affordable data plans, and widespread adoption of smartphones in developing countries.
                         As the digital landscape expands, the internet will continue to play a crucial role in shaping various aspects of daily life, including communication, entertainment, education, and commerce. This projection underscores the importance of digital inclusion and highlights the immense potential for businesses and organizations to tap into the rapidly growing online market.</span>
                 </div>
-                <img src={CHART1} alt="Chart 1" className="chart-img" />
+                {/* <img src={CHART1} alt="Chart 1" className="chart-img" /> */}
+                <PopulationChart/>
               </div>
 
               <div className="chart-box">
