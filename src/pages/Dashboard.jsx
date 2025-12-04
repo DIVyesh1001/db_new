@@ -50,7 +50,7 @@ const Dashboard = () => {
   };
 
   const markets = [
-    'Population', 'eCommerce', 'Q-Commerce', 'Beauty', 'Fashion',
+    'Population', 'India Macroeconomics Indicator Report Oct 2025', 'Q-Commerce', 'Beauty', 'Fashion',
     'Foodservice', 'Payments', 'Airport Retail', 'Liquor', 'Smartphones'
   ];
 
@@ -152,6 +152,16 @@ const Dashboard = () => {
             key={index}
             className="market-tile"
             onClick={() => {
+              // Special case: macroeconomics report routes to dedicated macro page
+              if (market === 'India Macroeconomics Indicator Report Oct 2025') {
+                if (!user) {
+                  navigate('/login?redirect=/macroeconomics');
+                } else {
+                  navigate('/macroeconomics');
+                }
+                return;
+              }
+
               if (!user) {
                 navigate('/login?redirect=/markets/' + market.toLowerCase());
               } else {

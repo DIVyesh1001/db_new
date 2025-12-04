@@ -8,6 +8,7 @@ import LoggedOutHomepage from './pages/LoggedOutHomepage';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import MarketDetail from './pages/MarketDetail';
+import MacroeconomicsDetails from './pages/MacroeconomicsDetails';
 import DatasetDetail from './pages/DatasetDetail';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminRoute from './components/AdminRoute';
@@ -29,6 +30,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <MarketDetail />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/macroeconomics"
+                element={
+                  <ProtectedRoute>
+                    <MacroeconomicsDetails />
                   </ProtectedRoute>
                 }
               />
